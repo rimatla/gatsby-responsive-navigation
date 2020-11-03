@@ -32,7 +32,7 @@ const Navbar = ({ menuLinks }) => {
         {menu ? <FaTimes /> : <FaBars />}
       </MenuIconStyled>
 
-      {/* menu side drawer */}
+      {/* this the navigation menu side drawer relying on CSS transition */}
       <ListContainerStyled open={menu}>
         <MainListStyled>
           {menuLinks.map(link => (

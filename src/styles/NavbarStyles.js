@@ -41,7 +41,7 @@ export const ListContainerStyled = styled.div`
     /* wire drawer here */
     left: ${({ open }) => (open ? 0 : "-100%")};
     opacity: 1;
-    transition: ${({ open }) => (open ? "all 0.7s ease" : "all 0.7s ease")};
+    transition: all 0.7s ease;
     margin: 0;
     background: rgb(105, 105, 105);
     z-index: 1;
