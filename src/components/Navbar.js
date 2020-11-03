@@ -16,17 +16,9 @@ import {
 
 const Navbar = ({ menuLinks }) => {
   const [menu, setMenu] = React.useState(false);
-  const [dropdown, setDropdown] = React.useState(false);
   const handleMenu = () => setMenu(!menu);
   const handleDropdown = () => setMenu(true);
-
   const closeMobileMenu = () => setMenu(false);
-
-  const toggleDropdown = () => {
-    setDropdown(!menu);
-  };
-
-  console.log("rendered");
 
   return (
     <NavbarStyled>
@@ -46,7 +38,7 @@ const Navbar = ({ menuLinks }) => {
           {menuLinks.map(link => (
             <MainListItemStyled key={link.name}>
               {link.subMenu ? (
-                <ListItemNotLinkStyled onClick={toggleDropdown}>
+                <ListItemNotLinkStyled onClick={handleDropdown}>
                   {link.name}
                   <span>
                     <FaCaretDown />

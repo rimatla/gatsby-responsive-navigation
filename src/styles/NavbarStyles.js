@@ -84,7 +84,7 @@ export const MainListItemStyled = styled.li`
   color: white;
   background-color: darkorange;
   display: block;
-  padding: 1rem;
+  padding: 1rem 0;
   position: relative;
   transition-duration: 0.5s;
   & :hover {
