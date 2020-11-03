@@ -65,7 +65,7 @@ export const MainListStyled = styled.ul`
   background: rebeccapurple;
   margin: 0;
   display: grid;
-  grid-template-columns: repeat(3, auto);
+  grid-template-columns: repeat(3, 100px);
   gap: 2px;
   a {
     text-decoration: none;
